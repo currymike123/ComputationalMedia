@@ -12,6 +12,6 @@ noFill();
 
 //Create a set of ellipses. 
 ellipse(50,50,50,50);
-ellipse(40,45,10,10);
-ellipse(60,45,10,10);
-ellipse(50,60,20,10);
+//ellipse(40,45,10,10);
+//ellipse(60,45,10,10);
+//ellipse(50,60,20,10);
