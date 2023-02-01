@@ -1,8 +1,12 @@
+//Michael Curry - Drawing Primitives
+
 size(100,100);
 
 //Point
 
 //point(50,50);
+//point(25,25);
+//point(75,75);
 
 //You can connect multiple points to form a line.
 //point(50, 50);
@@ -14,7 +18,7 @@ size(100,100);
 //point(50, 56);
 //point(50, 57);
 //point(50, 58);
-//point(50, 59);
+////point(50, 59);
 
 //Line
 //line(50, 50, 50, 59);
@@ -50,13 +54,23 @@ size(100,100);
 //rect(55, 55, 25, 25);
 
 //Ellipse
-//ellipse(40, 40, 50, 50);
+//ellipse(40, 40, 50, 80);
 //ellipse(80, 80, 30, 30);
 
 //Bezier
-bezier(32, 20, 80, 5, 80, 75, 30, 75);
-//control points
-line(32, 20, 80, 5);
-ellipse(80, 5, 5, 5);
-line(80, 75, 30, 75);
-ellipse(80, 75, 5, 5);
+//bezier(32, 20, 80, 5, 80, 75, 30, 75);
+////control points
+//line(32, 20, 80, 5);
+//ellipse(80, 5, 5, 5);
+//line(80, 75, 30, 75);
+//ellipse(80, 75, 5, 5);
+
+
+//background(255);
+fill(0,0,255);
+
+stroke(255,0,0);
+strokeWeight(10);
+ellipse(80,80,30,30);
+background(55,147,60);
+ellipse(40, 40, 50, 80);
