@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Module2</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Module3_exercises</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14259,131 +14259,61 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Data-Types,-Variables,-&amp;-Structures">Data Types, Variables, &amp; Structures<a class="anchor-link" href="#Data-Types,-Variables,-&amp;-Structures">&#182;</a></h1><hr>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Data-Types">Data Types<a class="anchor-link" href="#Data-Types">&#182;</a></h3><p>Processing can store and modify many different kinds of data, including numbers, letters, words, colors, image, fonts, and boolean values.</p>
-<h4 id="Primitive-Data-Types">Primitive Data Types<a class="anchor-link" href="#Primitive-Data-Types">&#182;</a></h4><table>
-<thead><tr>
-<th style="text-align:center"><strong>Name</strong></th>
-<th style="text-align:center"><strong>Size</strong></th>
-<th style="text-align:center"><strong>Value Range</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">boolean</td>
-<td style="text-align:center">1 bit</td>
-<td style="text-align:center">true or false</td>
-</tr>
-<tr>
-<td style="text-align:center">byte</td>
-<td style="text-align:center">8 bits</td>
-<td style="text-align:center">0 - 255 numbers</td>
-</tr>
-<tr>
-<td style="text-align:center">char</td>
-<td style="text-align:center">16 bits</td>
-<td style="text-align:center">keyboard characters</td>
-</tr>
-<tr>
-<td style="text-align:center">int</td>
-<td style="text-align:center">32 bits</td>
-<td style="text-align:center">Integer numbers</td>
-</tr>
-<tr>
-<td style="text-align:center">float</td>
-<td style="text-align:center">32 bits</td>
-<td style="text-align:center">Real fractional numbers</td>
-</tr>
-<tr>
-<td style="text-align:center">color</td>
-<td style="text-align:center">32 bits</td>
-<td style="text-align:center">Red, Green, Blue, and Alpha</td>
-</tr>
-<tr>
-<td style="text-align:center">string</td>
-<td style="text-align:center">64 bits</td>
-<td style="text-align:center">Set of characters that form a word</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Variables">Variables<a class="anchor-link" href="#Variables">&#182;</a></h3><p>A variable is a container for storing data.  Variables allow a data element to be reused many times within a program.</p>
-<p>// <b>Comments</b> are ignored by the computer but are important for people.  They allow you to tell the story of the program and write notes for others.</p>
-
-<pre><code>int x;  // Declare the variable x of type int
-float y; //Declare the variable y of type float
-boolean b; //Declare the variable b of type boolean
-x = 100;  //Assign the value 50 to x
-y = 12.6  //Assign the value 5.4 to y
-b = true;  //Assign the value true to b</code></pre>
-<p>A variable is first declared and then a value is assigned to it.  When a variable is declared the computer allocates a portion memory to store the variable according to its size.</p>
-<p>A variable can be declared and assigned separately or at the same time.</p>
-
-<pre><code>int x;
-x = 100;</code></pre>
-<p>or</p>
-
-<pre><code>int x = 100;</code></pre>
-<h4 id="Syntax">Syntax<a class="anchor-link" href="#Syntax">&#182;</a></h4><p>Variables cannot begin with numbers.  By convention a variable name always begins with a lowercase letter.</p>
-<p>Two widely used formats are <bold>Camel Case</bold> and <bold>Snake Case</bold>.</p>
-<p>In <bold>Camel case</bold> the letter after a break is capitalized.</p>
-
-<pre><code>mouseY
-camelCaseVariable</code></pre>
-<p>In <bold>Snake Case</bold> breaks are seperated with the <code>_</code> symbol.</p>
-
-<pre><code>snake_case_variable
-computational_media</code></pre>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Processing-Variables">Processing Variables<a class="anchor-link" href="#Processing-Variables">&#182;</a></h3>
-<pre><code>width  //stores the width of the display window
-height  //stores the height of the display window
-mouseX //stores the mouse position on the x axis
-mouseY //stores the mouse position on the y axis</code></pre>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Data-Structures">Data Structures<a class="anchor-link" href="#Data-Structures">&#182;</a></h3><p>A <bold>Data Structure</bold> is a collection of variables.  Grouping variables together allows for easy access to related data.</p>
-<h4 id="Arrays">Arrays<a class="anchor-link" href="#Arrays">&#182;</a></h4><p>An array is an ordered set of data.  It appears as a variable and can hold multiple values of the same data type at the same time.  We can have arrays of booleans, integers, strings, etc.  Array's are defined with the <code>[]</code> symbol.</p>
-
-<pre><code>String [] names = {"Michael", "Curry", "John", "Doe"};
-float [] temperature = {88.9, 89.1, 89.0, 93.4, 95.2, 101.2};
-int [] transactions = new int[50];
-boolean [] isOff;</code></pre>
-<p>To access the elements of an array we use integers between the <code>[]</code>.  Arrays start at 0, so it access the 1st element you use 0.  The second element is at position 1.</p>
-
-<pre><code>names[0]
-temperature[1]</code></pre>
-<h4 id="Array-Methods">Array Methods<a class="anchor-link" href="#Array-Methods">&#182;</a></h4><ul>
-  <li>array.length: returns the number of elements in the array</li>
-  <li>sort(array): sorts the elements in alphabetic order</li>
-  <li>append(array,data): expands an array by one element and adds data value</li>
-  <li>subset(array, offset, length): creates a subset of an array at offset for specified length</li>
-  <li>expand(array, size): expands array by the size and retains the existing elements.  
+<p><strong>(1)</strong> Write the declaration statement for the following arrays:</p>
+<ul>
+<li>30 integers</li>
+<li>100 floating point numbers</li>
+<li>50 Strings</li>
 </ul>
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Functions-and-Animation-Loop">Functions and Animation Loop<a class="anchor-link" href="#Functions-and-Animation-Loop">&#182;</a></h4><p>A <b>function</b> is a set of code within a program that performs a specific task.  They are also reusable and can be used over and over again.  Functions are a powerful programming tool that make programs easier to read and change.<p></p>
-<p>Processing has two main functions that form the backbone of the language:  <b><em>setup()<em></b> and <b><em>draw()<em></b>.</p>
-<p>The code inside <em>setup()<em> runs once when the program first starts.  The size of the display window is set along with intitalizing global variables used in the program.</p>
-<p>The code inside <em>draw()<em> runs continuously in a loop and draws one image to the display window at the end of each loop.</p>
+<p><strong>(2)</strong> If you have and array with 1,000 elements, what is the range of the index values for the array?</p>
+<p><strong>(3)</strong> Assuming an array of 10 integers.  Finish the for loop that will square each number (multiply by itself).</p>
+
+<pre><code>int[] nums = {5, 4, 2, 7, 6, 8, 5, 2, 8, 14};
+
+for(int i ____; i &lt; ____; i++){
+    ___ [i] = ____ * ____ ; 
+}</code></pre>
+<p><strong>(4)</strong>  Sort the array from question 3.</p>
+<p><strong>(5)</strong> What is the result of the following program?</p>
+
+<pre><code>int a = 0
+for (int i = 0; i &lt; 5; i++){
+    a++;
+    a += i;
+}</code></pre>
+<p><strong>(6)</strong> If you have two variables, x and y.  You want to swap their values.  Which is the right program?</p>
+<p>(A)</p>
+
+<pre><code>x = y;
+y = x;</code></pre>
+<p>(B)</p>
+
+<pre><code>tempX = x;
+tempY = y;
+x = tempX;
+y = tempY;</code></pre>
+<p>(C)</p>
+
+<pre><code>y = x;
+tempX = x;
+x = tempX;</code></pre>
+<p>(D)</p>
+
+<pre><code>tempX = x;
+x = y;
+y = tempX;</code></pre>
+<p><strong>(7)</strong>  Finish the code that will produce the following image.</p>
+<p><img src="images/mod3_circle.png"></p>
+
+<pre><code>size(200,200);
+background(255);
+
+for (________;________;________–   20) {
+    stroke(0);
+    fill(________);
+    ellipse(________,________,________,________);
+    ellipse(________,________,________,________);
+}</code></pre>
 
 </div>
 </div>

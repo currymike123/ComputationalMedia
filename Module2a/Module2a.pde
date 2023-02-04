@@ -1,5 +1,4 @@
-
-////New empty array with 0 elements
+//New empty array with 0 elements
 //String [] s = new String[0];
 
 ////How many items are in the array.  Use ".length"
@@ -106,15 +105,15 @@
 //    y[i] = y[i - 1];
 //  }
   
-//  //Add values to the beginning of the array.
-//  x[0] = mouseX;
-//  y[0] = mouseY;
+  ////Add values to the beginning of the array.
+  //x[0] = mouseX;
+  //y[0] = mouseY;
   
-//  //Draw circles at the array locations.
+  ////Draw circles at the array locations.
   
-//  for(int i = 0; i < num; i++){
-//    ellipse(x[i], y[i], i/2.0, i/2.0);
-//  }
+  //for(int i = 0; i < num; i++){
+  //  ellipse(x[i], y[i], i/2.0, i/2.0);
+  //}
   
 //}
 
@@ -168,6 +167,6 @@
 //  }
 //  endShape();
   
-//}
+}
 
 ////---------------------------------------------------------------
