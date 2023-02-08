@@ -1,6 +1,6 @@
 
 //Global Variable array for students names.
-String[] names = {"Tamiur", "Ethan", "Lara", "Mette", "Michelle", "Jaden", "Kevin"};
+String[] names = {"Taimur", "Lara", "Mette", "Michelle", };
 int selection;
 String currentName;
 
@@ -11,7 +11,7 @@ void setup(){
   smooth();
   stroke(0);
   textSize(45);
-  text("Assignment 1: Random Name Selector", 40, 120);
+  text("Assignment 1: Drawing Primitives", 40, 120);
   drawShape();
 }
 
@@ -22,14 +22,14 @@ void draw(){
     randomSelection();
     drawShape();
     fill(255);
-    textSize(120);
+    textSize(70);
     text(currentName, 40, 120);
     delay(500);
   }
 }
 
 void drawShape(){
-   beginShape();
+     beginShape();
       for(int i = 0; i < names.length+1; i++){
         fill(100);
         vertex(int(random(200,width)),int(random(200,height)));
@@ -41,7 +41,7 @@ void drawShape(){
         fill(155);
         vertex(int(random(200,width)),int(random(200,height)));
       }
-    endShape(CLOSE);
+     endShape(CLOSE);
 }
 
 
